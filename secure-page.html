@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tajna strona</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script-secure.js"></script>
+    </head>
+    <body class="bg-gray-800">
+        <div id="intro" class="intro flex h-screen items-center justify-center">
+            <h1 class="text-white text-9xl">Secret !</h1>
+        </div>
+
+        <div id="login-panel" class="login-panel">
+            <div class="flex h-screen items-center justify-center">
+                <div class="bg-gray-900 rounded-lg p-8 w-1/3">
+                    <h1 class="text-white text-2xl font-bold mb-4">Lista zadań</h1>   
+                <form id="task-form">
+                    <div>
+                        <label for="name" class="text-white">Nazwa zadania: </label>
+                            <input type="text" id="name" name="name" class="w-full rounnded-md px-3 py-2 bg-gray-700 text-white">
+                    </div>
+                <div class="flex mt-2">
+                <!-- margines 2 z top -->
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounnded-md">Dodaj zadanie</button>
+                </div>    
+                </form>
+                
+                <ul id="task-list" class="mt-6"></ul>
+        </div>
+
+        <!-- <script src="script.js"></script> można umieścić  na dole - ale wtedy kiedy są czynniki , które temu sprzyjają . Kiedyś umieszczało się na dole. jesli mamy duzy rozmiar - to mozemy umiescic na koncu body , jesli scripty są nie wielkie - to użycie z defer - to jest to optymalne rozwiązanie -->
+    </body>
+</html>
